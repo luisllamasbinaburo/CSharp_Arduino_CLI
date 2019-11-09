@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using CSharp_Arduino_CLI.Entities;
 using RJCP.IO.Ports;
 
 
-namespace CSharp_Arduino_CLI.Domain
+namespace CSharp_Arduino_CLI
 {
     public static class ArduinoCLI_API
     {

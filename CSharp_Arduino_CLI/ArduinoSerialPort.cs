@@ -3,7 +3,7 @@ using System.Linq;
 using CSharp_Arduino_CLI.Utils;
 using RJCP.IO.Ports;
 
-namespace CSharp_Arduino_CLI.Domain
+namespace CSharp_Arduino_CLI
 {
     public class ArduinoSerialPort
     {

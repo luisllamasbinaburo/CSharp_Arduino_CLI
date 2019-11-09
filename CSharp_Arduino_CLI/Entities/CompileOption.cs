@@ -1,4 +1,4 @@
-﻿namespace CSharp_Arduino_CLI.Domain
+﻿namespace CSharp_Arduino_CLI.Entities
 {
     public class CompileOption
     {

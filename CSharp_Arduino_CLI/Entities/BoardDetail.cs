@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 
-namespace CSharp_Arduino_CLI.Domain
+namespace CSharp_Arduino_CLI.Entities
 {
     public class BoardDetail
     {
