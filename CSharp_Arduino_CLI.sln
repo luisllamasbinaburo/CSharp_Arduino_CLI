@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_Arduino_CLI", "CSharp_Arduino_CLI\CSharp_Arduino_CLI.csproj", "{8032CCB6-9018-4DDF-A038-59F9A2E40A6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8032CCB6-9018-4DDF-A038-59F9A2E40A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8032CCB6-9018-4DDF-A038-59F9A2E40A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8032CCB6-9018-4DDF-A038-59F9A2E40A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8032CCB6-9018-4DDF-A038-59F9A2E40A6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30D3B5AE-A6B1-43F9-9B39-8D1A8E4942D2}
+	EndGlobalSection
+EndGlobal
