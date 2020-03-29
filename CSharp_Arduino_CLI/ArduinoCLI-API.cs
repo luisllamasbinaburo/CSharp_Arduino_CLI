@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Threading.Tasks;
 using CSharp_Arduino_CLI.Entities;
 using RJCP.IO.Ports;
@@ -10,6 +11,11 @@ namespace CSharp_Arduino_CLI
 {
     public static class ArduinoCLI_API
     {
+        /**
+         * If not on the path
+         **/
+        private static string ARDUINO_CLI_PATH = "";
+
 
         public static string[] GetPorts()
         { 
@@ -98,10 +104,9 @@ namespace CSharp_Arduino_CLI
 
         internal static string RunCliCommand(string arguments)
         {
-         
             var process = new System.Diagnostics.Process {
                 StartInfo = {
-                    FileName = "arduino-cli",
+                    FileName = ARDUINO_CLI_PATH + "arduino-cli",
                     Arguments = arguments + " --format json",
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
@@ -191,6 +196,18 @@ namespace CSharp_Arduino_CLI
             }
 
             return boardDetail;
+        }
+        public static void SetArduinoCliPath(string path)
+        {
+            if (!string.IsNullOrWhiteSpace(path))
+            {
+                ARDUINO_CLI_PATH = path.Trim();
+                String dirSep = Path.DirectorySeparatorChar.ToString();
+                if (!ARDUINO_CLI_PATH.EndsWith(dirSep))
+                {
+                    ARDUINO_CLI_PATH += dirSep;
+                }
+            }
         }
     }
 }

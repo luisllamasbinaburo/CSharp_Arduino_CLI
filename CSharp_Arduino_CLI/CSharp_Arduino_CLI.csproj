@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseUrl>https://github.com/mfyuce/CSharp_Arduino_CLI/blob/nuget_pkg/LICENSE.md</PackageLicenseUrl>
+    <Authors>Luis Llamas</Authors>
+    <PackageProjectUrl>https://github.com/luisllamasbinaburo/CSharp_Arduino_CLI</PackageProjectUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
