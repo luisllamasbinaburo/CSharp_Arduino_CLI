@@ -55,6 +55,11 @@ namespace CSharp_Arduino_CLI
             return boardDetails;
         }
 
+        public static string RunOwnArduinoCliCommand(string command)
+        {
+            return RunCliCommand(command);
+        }
+
 
         internal static Task<string> RunCliCommandAsync(string arguments)
         {
